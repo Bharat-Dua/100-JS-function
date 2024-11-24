@@ -34,3 +34,10 @@ function lastNRevert(message, n) {
 }
 
 export { lastNRevert };
+
+//* Approach 2
+
+function lastNRevert(str, n) {
+  return str.slice(-n).split("").reverse().join("");
+}
+console.log(lastNRevert("jon doe", 3));
